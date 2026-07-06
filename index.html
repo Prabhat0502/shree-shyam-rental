@@ -56,7 +56,7 @@
         </div>
         <p>From everyday errands to full-day adventures, choose a ride that matches your plan — and your budget.</p>
       </div>
-      <div class="vehicle-grid">
+      <div class="vehicle-scroll" aria-label="Scrollable vehicle fleet">
         <article class="vehicle-card featured">
           <div class="vehicle-top">
             <span class="tag">Most popular</span>
@@ -67,27 +67,53 @@
           </div>
           <div class="vehicle-info">
             <div><h3>Honda Activa</h3><p>Automatic · 2 seats · Helmet included</p></div>
-            <div class="price"><span>from</span><strong>₹399</strong><small>/ day</small></div>
           </div>
           <button class="card-button book-button" data-vehicle="Honda Activa">Book this ride <span>↗</span></button>
         </article>
 
-        <article class="vehicle-card dark-card">
+        <article class="vehicle-card">
           <div class="vehicle-top">
-            <span class="tag">For the road</span>
+            <span class="tag">Automatic</span>
             <span class="vehicle-no">02</span>
           </div>
           <div class="vehicle-photo">
-            <img src="assets/commuter-bike.avif" alt="Commuter bike available for rent">
+            <img src="assets/activa-demo.avif" alt="Honda Activa 6G scooter available for rent">
           </div>
           <div class="vehicle-info">
-            <div><h3>Commuter Bike</h3><p>Geared · 2 seats · Helmet included</p></div>
-            <div class="price"><span>from</span><strong>₹599</strong><small>/ day</small></div>
+            <div><h3>Activa 6G</h3><p>Comfortable · Easy parking · City-ready</p></div>
           </div>
-          <button class="card-button book-button" data-vehicle="Commuter Bike">Book this ride <span>↗</span></button>
+          <button class="card-button book-button" data-vehicle="Activa 6G">Book this ride <span>↗</span></button>
+        </article>
+
+        <article class="vehicle-card dark-card">
+          <div class="vehicle-top">
+            <span class="tag">Fresh fleet</span>
+            <span class="vehicle-no">03</span>
+          </div>
+          <div class="vehicle-photo">
+            <img src="assets/activa-fleet.jpeg" alt="Multiple scooters lined up for rent">
+          </div>
+          <div class="vehicle-info">
+            <div><h3>Scooty Fleet</h3><p>Clean vehicles · Flexible rental plans · Quick pickup</p></div>
+          </div>
+          <button class="card-button book-button" data-vehicle="Scooty Fleet">Book this ride <span>↗</span></button>
+        </article>
+
+        <article class="vehicle-card">
+          <div class="vehicle-top">
+            <span class="tag">More options</span>
+            <span class="vehicle-no">04</span>
+          </div>
+          <div class="vehicle-photo">
+            <img src="assets/commuter-bike.avif" alt="Additional two-wheeler rental option">
+          </div>
+          <div class="vehicle-info">
+            <div><h3>Rental Two-Wheelers</h3><p>Ask for available models, timings, and rental duration.</p></div>
+          </div>
+          <button class="card-button book-button" data-vehicle="Rental Two-Wheelers">Book this ride <span>↗</span></button>
         </article>
       </div>
-      <p class="fleet-note">Need a weekly or monthly rental? <a href="#contact">Ask for our special rates →</a></p>
+      <p class="fleet-note">Scroll sideways to view more vehicles. Need hourly, weekly, or monthly rental? <a href="#contact">Ask for available options →</a></p>
     </section>
 
     <section class="how section" id="how">
@@ -156,7 +182,7 @@
     <form id="booking-form">
       <label>Your name<input name="name" required placeholder="Enter your name"></label>
       <label>Phone number<input name="phone" required type="tel" placeholder="+91 72480 02608"></label>
-      <label>Choose a ride<select name="vehicle"><option>Honda Activa</option><option>Commuter Bike</option></select></label>
+      <label>Choose a ride<select name="vehicle"><option>Honda Activa</option><option>Activa 6G</option><option>Scooty Fleet</option><option>Rental Two-Wheelers</option></select></label>
       <label>Rental date<input name="date" required type="date"></label>
       <button class="button button-primary" type="submit">Send booking request <span>→</span></button>
     </form>

@@ -56,7 +56,9 @@
         </div>
         <p>From everyday errands to full-day adventures, choose a ride that matches your plan — and your budget.</p>
       </div>
-      <div class="vehicle-scroll" aria-label="Scrollable vehicle fleet">
+      <div class="vehicle-slider-wrapper">
+        <button class="slider-arrow prev" aria-label="Previous vehicle">←</button>
+        <div class="vehicle-scroll" aria-label="Scrollable vehicle fleet">
         <article class="vehicle-card featured">
           <div class="vehicle-top">
             <span class="tag">Most popular</span>
@@ -113,7 +115,15 @@
           <button class="card-button book-button" data-vehicle="Blue Activa">Book on WhatsApp <span>↗</span></button>
         </article>
       </div>
-      <p class="fleet-note">Scroll sideways to view more vehicles. Need hourly, weekly, or monthly rental? <a href="#contact">Ask for available options →</a></p>
+      <button class="slider-arrow next" aria-label="Next vehicle">→</button>
+    </div>
+    <div class="slider-dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
+    </div>
+    <p class="fleet-note">Need hourly, weekly, or monthly rental? <a href="#contact">Ask for available options →</a></p>
     </section>
 
     <section class="how section" id="how">

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shree-shyam-rental.vercel.app/sitemap.xml
